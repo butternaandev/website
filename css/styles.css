@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Fira Code';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/FiraCode-Regular.woff2") format("woff2"), url("fonts/FiraCode-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style:  normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/fonts/FiraCode-Bold.woff2") format("woff2"), url("fonts/FiraCode-Bold.woff") format("woff");
+}
+
+:root {
+  --accent:                 rgb(247, 151, 0);
+  --accent-secondary:       rgb(249, 192, 0);
+  --accent-alpha-20:   rgba(247, 151, 0, .2);
+  --accent-alpha-70:   rgba(247, 151, 0, .7);
+  --background:              rgb(40, 40, 40);
+  --color:                rgb(233, 219, 176);
+  --border-color:    rgba(255, 255, 255, .1);
+}
+
+body {
+  color: var(--color);
+  background-color: var(--background);
+}
+
+.container {
+  height: 500px;
+  position: relative;
+}
+
+.info-section {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.info-section p {
+  color: var(--color);
+  font-family: "Fire Code", monospace;
+  line-height: 1.5;
+  font-size: 2em;
+}
+
+.info-section a {
+  font-family: "Fire Code", monospace;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.info-section .intro {
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .info-section h2 {
+    font-size: 6rem;
+  }
+  .info-section p {
+    font-size: 1.5rem;
+  }
+  .info-section a {
+    font-size: 1rem;
+  }
+}
+
+.pages {
+  background: inherit;
+  padding: 0 50px;
+}
+
+.pages img {
+  padding: 25px 0;
+}
+
+.pages p {
+  color: var(--color);
+  font-family: "Fire Code", monospace;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+.pages a {
+  color: var(--accent);
+  font-family: "Fire Code", monospace;
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+.pages h2 {
+  font-weight: 800;
+  font-family: "Fire Code", monospace;
+  font-size: 3em;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: var(--accent);
+}
+
+.pages h3 {
+  font-weight: 800;
+  font-family: "Fire Code", monospace;
+  font-size: 1.75em;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: var(--accent);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-alpha-20)
+}
