@@ -45,16 +45,21 @@ body {
 
 .info-section p {
   color: var(--color);
-  font-family: "Fire Code", monospace;
+  font-family: "Fira Code", monospace;
   line-height: 1.5;
   font-size: 2em;
 }
 
 .info-section a {
-  font-family: "Fire Code", monospace;
+  font-family: "Fira Code", monospace;
   line-height: 1.5;
   font-size: 1.5rem;
   color: var(--accent);
+}
+
+.info-section a:hover {
+  color: var(--accent-alpha-70);
+  transition: 0.1s ease-in-out;
 }
 
 .info-section .intro {
@@ -85,21 +90,26 @@ body {
 
 .pages p {
   color: var(--color);
-  font-family: "Fire Code", monospace;
+  font-family: "Fira Code", monospace;
   line-height: 1.5;
   font-size: 1.2em;
 }
 
 .pages a {
   color: var(--accent);
-  font-family: "Fire Code", monospace;
+  font-family: "Fira Code", monospace;
   line-height: 1.5;
   font-size: 1em;
 }
 
+.pages a:hover {
+  color: var(--accent-alpha-70);
+  transition: 0.1s ease-in-out;
+}
+
 .pages h2 {
   font-weight: 800;
-  font-family: "Fire Code", monospace;
+  font-family: "Fira Code", monospace;
   font-size: 3em;
   margin-bottom: 25px;
   line-height: 1.5;
@@ -108,7 +118,7 @@ body {
 
 .pages h3 {
   font-weight: 800;
-  font-family: "Fire Code", monospace;
+  font-family: "Fira Code", monospace;
   font-size: 1.75em;
   margin-bottom: 25px;
   line-height: 1.5;
