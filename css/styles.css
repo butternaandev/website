@@ -55,6 +55,7 @@ body {
   line-height: 1.5;
   font-size: 1.5rem;
   color: var(--accent);
+  text-decoration: none;
 }
 
 .info-section a:hover {
@@ -100,10 +101,16 @@ body {
   font-family: "Fira Code", monospace;
   line-height: 1.5;
   font-size: 1em;
+  text-decoration: none;
 }
 
 .pages a:hover {
   color: var(--accent-alpha-70);
+  transition: 0.1s ease-in-out;
+}
+
+.pages a img:hover {
+  opacity: 0.8;
   transition: 0.1s ease-in-out;
 }
 
@@ -125,6 +132,14 @@ body {
   color: var(--accent);
 }
 
+.unselectable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -139,4 +154,12 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-alpha-20)
+}
+
+::selection {
+  background: var(--border-color);
+}
+
+::-moz-selection {
+  background: var(--border-color);
 }
